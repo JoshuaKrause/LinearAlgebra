@@ -27,6 +27,12 @@ class Vector(object):
     def __eq__(self, v):
         return self.coordinates == v.coordinates
 
+    def __getitem__(self, i):
+        return self.coordinates[i]
+
+    def __iter__(self):
+        return self.coordinates.__iter__()
+
     def plus(self, v):
         return Vector([x + y for x,y in zip(self.coordinates, v.coordinates)])
 
@@ -118,7 +124,7 @@ print 'Area of parellelogram: {}'.format(c.area_of_parellelogram(d))
 e = Vector([1.5, 9.547, 3.691])
 f = Vector([-6.007, 0.124, 5.772])
 print 'Area of triangle: {}'.format(e.area_of_triangle(f))
-''''
+'''
 
 ''' SECTION 5 TEST
 a = Vector([3.039, 1.879])

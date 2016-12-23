@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>742459f2-1e02-40f7-9b53-055716dd7570</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>vectors.py</StartupFile>
+    <StartupFile>line.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="vectors.py" />
+    <Compile Include="line.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="vector.py" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
